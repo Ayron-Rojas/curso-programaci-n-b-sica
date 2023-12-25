@@ -30,7 +30,7 @@ body {
 
 }
 
-.eleccion {
+.subtitulo {
   box-sizing: border-box;
   color: hotpink;
   width: 274px;
@@ -48,7 +48,7 @@ body {
   background-color: lightgrey;
 }
 
-.caja-mascota {
+.caja-mascota{
   display: flex;
   height: 160px;
   width: 100px;
@@ -111,6 +111,18 @@ input {
   font-family: 'Poppins', sans-serif;
   margin-top: 30px;
 }
+
+#boton-reiniciar{
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px outset #ff028d;
+  color: #1a1c83;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+}
+
 #mensajes {
   width: 280px;
   background: #EEEEEE;
@@ -143,15 +155,8 @@ input:checked + label{
   background-color: rgb(192, 55, 192);
 }
 
-@media(Max-width: 360px){
-  .caja-mascota{
-    flex-direction: column;
-    align-items: center;
-
-  }
-}
 @media(max-width:360px){
-  .tarjetas,.caja-mascota{
+  .caja-mascota,.titulo,.subtitulo{
     flex-direction:column;
     align-items: center;
   }
