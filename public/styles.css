@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+
+body {
+  background-color: blueviolet;
+  font-family: 'Silkscreen', sans-serif;
+}
+#seleccionar-mascota {
+  height: 96vh;
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  border: 3px outset rgb(146, 54, 62);
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.titulo {
+  box-sizing: border-box;
+  color: hotpink;
+  width: auto;
+  height: auto;
+  background-color: teal;
+  border: 3px outset rgb(146, 54, 62);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 30px;
+
+}
+
+.subtitulo {
+  box-sizing: border-box;
+  color: hotpink;
+  width: auto;
+  height: auto;
+  background-color: teal;
+  border: 3px outset rgb(146, 54, 62);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+
+}
+
+.seleccionador:focus :hover {
+  border-color: rgb(255, 0, 0);
+  background-color: lightgrey;
+}
+
+.caja-mascota{
+  display: flex;
+  height: 160px;
+  width: 100px;
+  gap: 10px;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+
+.tarjeta-de-mokepon{
+  width: 140px;
+  height: 140px;
+  background: rgb(7, 98, 110);
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 3px;
+  border: 3px outset #fffb00;
+  border-radius: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta-de-mokepon img {
+  width: 70px;
+  height: 60px;
+}
+
+#boton-mascota {
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px outset #fffb00;
+  color: #fffb00;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+}
+
+input {
+  display: none;
+}
+
+#seleccionar-ataque {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton-de-ataque{
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px outset #fffb00;
+  color: #fffb00;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+}
+
+#boton-reiniciar{
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px outset #ff028d;
+  color: #1a1c83;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+}
+
+#mensajes {
+  width: 280px;
+  background: #EEEEEE;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.ataques{
+  display: grid;
+  grid-template-columns: 140px 140px;
+}
+.col-ataques{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6px;
+  padding: 5px;
+}
+
+#vidas-jugador, #vidas-enemigo {
+  font-size: 32px;
+  margin-bottom: 0;
+  border: 2px outset #fffb00;
+}
+
+input:checked + label{
+  background-color: rgb(192, 55, 192);
+}
+
+#ver-mapa {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+#mapa {
+  image-rendering: pixelated; 
+  border: 1px solid black; 
+}
+
+
+@media(max-width:360px){
+  .caja-mascota,.titulo,.subtitulo{
+    flex-direction:column;
+    align-items: center;
+  }
+}
