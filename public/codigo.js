@@ -460,6 +460,8 @@ function enviarPosicion(x, y) {
                             if (mokeponEnemigo) {
                                 mokeponEnemigo.x = enemigo.x;
                                 mokeponEnemigo.y = enemigo.y;
+                            }else{
+                                return 
                             }
                             
                             return mokeponEnemigo

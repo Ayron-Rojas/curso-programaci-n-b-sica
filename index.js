@@ -2,6 +2,7 @@ const express = require("express")
 const cors = require("cors")
 const app = express()
 const jugadores = []
+const port = process.env.PORT || 8080
 app.use(express.static('public'))
 app.use(cors())
 app.use(express.json())
@@ -99,5 +100,5 @@ app.get("/mokepon/:jugadorId/ataques", (req, res) =>{
 })
 
 app.listen(8080, () => {
-  console.log("Servidor funcionando")
+  console.log(`Servidor funcionando en el puerto ${port}`)
 })
