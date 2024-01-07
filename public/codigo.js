@@ -425,9 +425,13 @@ function pintarCanvas() {
     enviarPosicion(mascotaJugadorObjeto.x, mascotaJugadorObjeto.y)
     
     mokeponesEnemigos.forEach(function (mokepon) {
-        mokepon.pintarMokepon()
-        revisarColision(mokepon)
-    })
+        if (mokepon && typeof mokepon.pintarMokepon === 'function') {
+            mokepon.pintarMokepon();
+            revisarColision(mokepon);
+        } else {
+            console.error('El objeto mokepon no tiene la función pintarMokepon definida:', mokepon);
+        }
+    });
     
 }
 // enviar posicion por coordenadas del mokepon
